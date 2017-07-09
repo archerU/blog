@@ -1,6 +1,6 @@
 # Blog info
-blog_name: 周小豪
-slogan: Find the forest of the world
+blog_name: 雾之小森
+slogan: Fog of small
 url: http://www.zhouxiaohao.com
 
 # Set avatar (Absolute url and relative url)
@@ -83,7 +83,7 @@ backtop:
 donation:
   show: true
   btn_text: 支持一下
-  tip: 小豪豪的努力大家都看在眼里，支持下小豪豪吧～
+  tip: 为小森林的精灵们祈福吧～
   items:
     - type: 微信
       text: 微信扫一扫
@@ -128,7 +128,7 @@ google_analytics:
 baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 
 # Comment service
-disqus_shortname: 周小豪
+disqus_shortname: 雾之小森
 # hypercomments_id: 89821
 # gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
 
@@ -150,17 +150,17 @@ about:
   - type: Github
     icon: icon-github
     text_key: Github
-    text_value: "@周小豪"
+    text_value: "@雾之小森"
     text_value_url: https://github.com/archerU
   - type: weibo
     icon: icon-weibo
     text_key: 微博
-    text_value: "@周小豪"
+    text_value: "@雾之小森"
     text_value_url: 
   - type: mail
     icon: icon-mail
     text_key: Gmail
-    text_value: "zhouxiaohaostudio@gmail.com"
+    text_value: "wzxsen@163.com"
   - type: location
     icon: icon-location
     text_value: 杭州
@@ -174,7 +174,7 @@ link:
 project:
   - type: company
     name: Fexo
-    url: https://github.com/forsigner/fexo
+    url: https://github.com/archerU
     intro: A minimalist design theme for hexo
 
 

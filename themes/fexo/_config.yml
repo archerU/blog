@@ -18,7 +18,7 @@ home_nav:
     target_blank: false #不在新页面打开
   - name: Project
     url: /project/
-    target_blank: false #在新页面打开
+    target_blank: true #在新页面打开
   - name: Github
     url: https://github.com/archerU
     target_blank: true

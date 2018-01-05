@@ -1,5 +1,5 @@
 # Blog info
-blog_name: 雾之小森
+blog_name: 雾小森
 slogan: Fog of small
 url: http://www.zhouxiaohao.com
 
@@ -150,12 +150,12 @@ about:
   - type: Github
     icon: icon-github
     text_key: Github
-    text_value: "@雾之小森"
+    text_value: "@雾小森"
     text_value_url: https://github.com/archerU
   - type: weibo
     icon: icon-weibo
     text_key: 微博
-    text_value: "@雾之小森"
+    text_value: "@雾小森"
     text_value_url: 
   - type: mail
     icon: icon-mail

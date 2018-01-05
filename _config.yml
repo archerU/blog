@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 雾之小森
+title: 雾小森
 subtitle: Don't make me think!
 description: web
-author: 雾之小森
-language:
+author: 雾小森
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fexo
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

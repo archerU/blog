@@ -5,6 +5,28 @@ category: Git
 
 ------
 
+## 创建
+
+#### 创建版本库
+
+```
+// 把这个目录变成Git可以管理的仓库
+git init 
+```
+
+
+```
+// 添加远程仓库
+git remote add origin git@github.com:<githubname>/<name>.git
+
+```
+
+```
+// 推送到远程仓库
+git push -u origin master
+```
+
+
 ## 分支
 
 #### 创建分支

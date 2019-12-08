@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 雾小森
+title: 鹿森
 subtitle: Don't make me think!
 description: web
-author: 雾小森
+author: 鹿森
 language: zh-Hans
 timezone:
 
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: diaspora
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

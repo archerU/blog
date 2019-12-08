@@ -5,9 +5,9 @@
   <subtitle>Don&#39;t make me think!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://zhouxiaohao.me/"/>
+  <link href="https://archeru.github.io/"/>
   <updated>2019-12-08T08:04:55.000Z</updated>
-  <id>http://zhouxiaohao.me/</id>
+  <id>https://archeru.github.io/</id>
   
   <author>
     <name>鹿森</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>html 标签</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/html/html%E6%A0%87%E7%AD%BE/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/html/html标签/</id>
+    <link href="https://archeru.github.io/2019/12/08/html/html%E6%A0%87%E7%AD%BE/"/>
+    <id>https://archeru.github.io/2019/12/08/html/html标签/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
@@ -34,38 +34,15 @@
     
     </summary>
     
-      <category term="html5" scheme="http://zhouxiaohao.me/categories/html5/"/>
+      <category term="html5" scheme="https://archeru.github.io/categories/html5/"/>
     
     
   </entry>
   
   <entry>
-    <title>Git 操作手册</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/git%E6%89%8B%E5%86%8C/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/git手册/</id>
-    <published>2019-12-08T08:04:55.000Z</published>
-    <updated>2019-12-08T08:04:55.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 把这个目录变成Git可以管理的仓库</span><br><span class="line">git init</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 添加远程仓库</span><br><span class="line">git remote add origin git@github.com:&lt;githubname&gt;/&lt;name&gt;.git</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 推送到远程仓库</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure><h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 创建分支</span><br><span class="line">git branch &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 创建并切换到新的分支</span><br><span class="line">git checkout -b &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 创建远程分支</span><br><span class="line">git push origin &lt;name&gt;</span><br></pre></td></tr></table></figure><h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 查看本地分支</span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line">// 查看远程分支</span><br><span class="line">git branch -r</span><br></pre></td></tr></table></figure><h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 删除本地分支</span><br><span class="line">git branch -d &lt;name&gt; </span><br><span class="line"></span><br><span class="line">// 强制删除本地分支</span><br><span class="line">git branch -D &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 删除远程分支</span><br><span class="line">git push origin :&lt;name&gt;</span><br></pre></td></tr></table></figure><h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><h4 id="增加tag"><a href="#增加tag" class="headerlink" title="增加tag"></a>增加tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 增加本地tag</span><br><span class="line">git tag &lt;tagname&gt;</span><br></pre></td></tr></table></figure><h4 id="查看tag"><a href="#查看tag" class="headerlink" title="查看tag"></a>查看tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -l</span><br></pre></td></tr></table></figure><h4 id="删除tag"><a href="#删除tag" class="headerlink" title="删除tag"></a>删除tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 删除本地tag</span><br><span class="line">git tag -d &lt;tagname&gt;</span><br><span class="line"></span><br><span class="line">// 删除远程tag</span><br><span class="line">git push origin :&lt;tagname&gt;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;创建&quot;&gt;&lt;a href=&quot;#创建&quot; class=&quot;headerlink&quot; title=&quot;创建&quot;&gt;&lt;/a&gt;创建&lt;/h2&gt;&lt;h4 id=&quot;创建版本库&quot;&gt;&lt;a href=&quot;#创建版本库&quot; class=&quot;headerlink&quot; title=&quot;创建版本库&quot;&gt;&lt;/a&gt;创建版本
-      
-    
-    </summary>
-    
-      <category term="Git" scheme="http://zhouxiaohao.me/categories/Git/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>二叉树和二叉查找树</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/algorithm/tree/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/algorithm/tree/</id>
+    <title>React 同构</title>
+    <link href="https://archeru.github.io/2019/12/08/React%E5%90%8C%E6%9E%84/"/>
+    <id>https://archeru.github.io/2019/12/08/React同构/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
@@ -73,15 +50,15 @@
     
     </summary>
     
-      <category term="Data Structures" scheme="http://zhouxiaohao.me/categories/Data-Structures/"/>
+      <category term="React" scheme="https://archeru.github.io/categories/React/"/>
     
     
   </entry>
   
   <entry>
     <title>排序算法</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/algorithm/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/algorithm/排序算法/</id>
+    <link href="https://archeru.github.io/2019/12/08/algorithm/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <id>https://archeru.github.io/2019/12/08/algorithm/排序算法/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
@@ -96,15 +73,31 @@
     
     </summary>
     
-      <category term="algorithm" scheme="http://zhouxiaohao.me/categories/algorithm/"/>
+      <category term="algorithm" scheme="https://archeru.github.io/categories/algorithm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>二叉树和二叉查找树</title>
+    <link href="https://archeru.github.io/2019/12/08/algorithm/tree/"/>
+    <id>https://archeru.github.io/2019/12/08/algorithm/tree/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Data Structures" scheme="https://archeru.github.io/categories/Data-Structures/"/>
     
     
   </entry>
   
   <entry>
     <title>浮动与清除浮动大总结</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/css/%E6%B5%AE%E5%8A%A8%E4%B8%8E%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E5%A4%A7%E6%80%BB%E7%BB%93/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/css/浮动与清除浮动大总结/</id>
+    <link href="https://archeru.github.io/2019/12/08/css/%E6%B5%AE%E5%8A%A8%E4%B8%8E%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E5%A4%A7%E6%80%BB%E7%BB%93/"/>
+    <id>https://archeru.github.io/2019/12/08/css/浮动与清除浮动大总结/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
@@ -112,31 +105,38 @@
     
     </summary>
     
-      <category term="css3" scheme="http://zhouxiaohao.me/categories/css3/"/>
+      <category term="css3" scheme="https://archeru.github.io/categories/css3/"/>
     
     
   </entry>
   
   <entry>
-    <title>React 同构</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/React%E5%90%8C%E6%9E%84/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/React同构/</id>
+    <title>Git 操作手册</title>
+    <link href="https://archeru.github.io/2019/12/08/git%E6%89%8B%E5%86%8C/"/>
+    <id>https://archeru.github.io/2019/12/08/git手册/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 把这个目录变成Git可以管理的仓库</span><br><span class="line">git init</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 添加远程仓库</span><br><span class="line">git remote add origin git@github.com:&lt;githubname&gt;/&lt;name&gt;.git</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 推送到远程仓库</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure><h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 创建分支</span><br><span class="line">git branch &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 创建并切换到新的分支</span><br><span class="line">git checkout -b &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 创建远程分支</span><br><span class="line">git push origin &lt;name&gt;</span><br></pre></td></tr></table></figure><h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 查看本地分支</span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line">// 查看远程分支</span><br><span class="line">git branch -r</span><br></pre></td></tr></table></figure><h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 删除本地分支</span><br><span class="line">git branch -d &lt;name&gt; </span><br><span class="line"></span><br><span class="line">// 强制删除本地分支</span><br><span class="line">git branch -D &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 删除远程分支</span><br><span class="line">git push origin :&lt;name&gt;</span><br></pre></td></tr></table></figure><h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><h4 id="增加tag"><a href="#增加tag" class="headerlink" title="增加tag"></a>增加tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 增加本地tag</span><br><span class="line">git tag &lt;tagname&gt;</span><br></pre></td></tr></table></figure><h4 id="查看tag"><a href="#查看tag" class="headerlink" title="查看tag"></a>查看tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -l</span><br></pre></td></tr></table></figure><h4 id="删除tag"><a href="#删除tag" class="headerlink" title="删除tag"></a>删除tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 删除本地tag</span><br><span class="line">git tag -d &lt;tagname&gt;</span><br><span class="line"></span><br><span class="line">// 删除远程tag</span><br><span class="line">git push origin :&lt;tagname&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
     <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;创建&quot;&gt;&lt;a href=&quot;#创建&quot; class=&quot;headerlink&quot; title=&quot;创建&quot;&gt;&lt;/a&gt;创建&lt;/h2&gt;&lt;h4 id=&quot;创建版本库&quot;&gt;&lt;a href=&quot;#创建版本库&quot; class=&quot;headerlink&quot; title=&quot;创建版本库&quot;&gt;&lt;/a&gt;创建版本
+      
     
     </summary>
     
-      <category term="React" scheme="http://zhouxiaohao.me/categories/React/"/>
+      <category term="Git" scheme="https://archeru.github.io/categories/Git/"/>
     
     
   </entry>
   
   <entry>
     <title>js 的数字精度</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/js/%E6%95%B0%E5%AD%A6%E7%B2%BE%E5%BA%A6/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/js/数学精度/</id>
+    <link href="https://archeru.github.io/2019/12/08/js/%E6%95%B0%E5%AD%A6%E7%B2%BE%E5%BA%A6/"/>
+    <id>https://archeru.github.io/2019/12/08/js/数学精度/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
@@ -156,8 +156,8 @@
   
   <entry>
     <title>Date 日期处理</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/js/%E6%97%A5%E6%9C%9F/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/js/日期/</id>
+    <link href="https://archeru.github.io/2019/12/08/js/%E6%97%A5%E6%9C%9F/"/>
+    <id>https://archeru.github.io/2019/12/08/js/日期/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
@@ -172,15 +172,15 @@
     
     </summary>
     
-      <category term="javascript" scheme="http://zhouxiaohao.me/categories/javascript/"/>
+      <category term="javascript" scheme="https://archeru.github.io/categories/javascript/"/>
     
     
   </entry>
   
   <entry>
     <title>js 随机数</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/js/%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/js/随机数/</id>
+    <link href="https://archeru.github.io/2019/12/08/js/%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
+    <id>https://archeru.github.io/2019/12/08/js/随机数/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
@@ -188,15 +188,15 @@
     
     </summary>
     
-      <category term="javascript" scheme="http://zhouxiaohao.me/categories/javascript/"/>
+      <category term="javascript" scheme="https://archeru.github.io/categories/javascript/"/>
     
     
   </entry>
   
   <entry>
     <title>linux 常用指令</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/linux/linux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/linux/linux常用指令/</id>
+    <link href="https://archeru.github.io/2019/12/08/linux/linux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+    <id>https://archeru.github.io/2019/12/08/linux/linux常用指令/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
@@ -211,15 +211,15 @@
     
     </summary>
     
-      <category term="linux" scheme="http://zhouxiaohao.me/categories/linux/"/>
+      <category term="linux" scheme="https://archeru.github.io/categories/linux/"/>
     
     
   </entry>
   
   <entry>
     <title>SEO 优化指南</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/optimizing&amp;performance/SEO/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/optimizing&amp;performance/SEO/</id>
+    <link href="https://archeru.github.io/2019/12/08/optimizing&amp;performance/SEO/"/>
+    <id>https://archeru.github.io/2019/12/08/optimizing&amp;performance/SEO/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
@@ -235,7 +235,7 @@
     
     </summary>
     
-      <category term="性能和优化" scheme="http://zhouxiaohao.me/categories/%E6%80%A7%E8%83%BD%E5%92%8C%E4%BC%98%E5%8C%96/"/>
+      <category term="性能和优化" scheme="https://archeru.github.io/categories/%E6%80%A7%E8%83%BD%E5%92%8C%E4%BC%98%E5%8C%96/"/>
     
     
   </entry>

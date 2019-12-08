@@ -17,24 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>html 标签</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/html/html%E6%A0%87%E7%AD%BE/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/html/html标签/</id>
+    <title>Date 日期处理</title>
+    <link href="http://zhouxiaohao.me/2019/12/08/js/%E6%97%A5%E6%9C%9F/"/>
+    <id>http://zhouxiaohao.me/2019/12/08/js/日期/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="内容分区"><a href="#内容分区" class="headerlink" title="内容分区"></a>内容分区</h2><h2 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h2><h3 id="块级文本"><a href="#块级文本" class="headerlink" title="块级文本"></a>块级文本</h3><h3 id="内联文本"><a href="#内联文本" class="headerlink" title="内联文本"></a>内联文本</h3><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><h2 id="图片与多媒体"><a href="#图片与多媒体" class="headerlink" title="图片与多媒体"></a>图片与多媒体</h2><h2 id="内嵌内容"><a href="#内嵌内容" class="headerlink" title="内嵌内容"></a>内嵌内容</h2><h2 id="交互元素"><a href="#交互元素" class="headerlink" title="交互元素"></a>交互元素</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="前提知识"><a href="#前提知识" class="headerlink" title="前提知识"></a>前提知识</h2><h3 id="时区"><a href="#时区" class="headerlink" title="时区"></a>时区</h3><p>以英国（格林尼治天文台旧址）即本初子午线为中时区（零时区）、东1-12区，西1-12区。每个时区横跨经度15度，时间为1小时。</p><h3 id="区时"><a href="#区时" class="headerlink" title="区时"></a>区时</h3><p>每个时区的中央经线上的时间就是这个时区内统一采用的时间，称为区时。</p><h3 id="UTC-协调世界时"><a href="#UTC-协调世界时" class="headerlink" title="UTC 协调世界时"></a>UTC 协调世界时</h3><p>协调世界时，又称世界统一时间、世界标准时间、国际协调时间。</p><h3 id="GMT-格林尼治标准时"><a href="#GMT-格林尼治标准时" class="headerlink" title="GMT 格林尼治标准时"></a>GMT 格林尼治标准时</h3><p>格林尼治标准时间的正午是指当太阳横穿格林尼治子午线时的时间。<br>在不需要精确到秒的情况下，通常将GMT 和UTC 视作等同。但UTC 更加科学更加精确，它是以原子时为基础，在时刻上尽量接近世界时的一种时间计量系统。</p><h2 id="软件系统中的时间"><a href="#软件系统中的时间" class="headerlink" title="软件系统中的时间"></a>软件系统中的时间</h2><h3 id="RTC-硬件时钟"><a href="#RTC-硬件时钟" class="headerlink" title="RTC 硬件时钟"></a>RTC 硬件时钟</h3><p>实时时钟为操作系统提供了一个可靠的时间，并且在断电的情况下，RTC实时时钟也可以通过电池供电，一直运行下去，用来保存和同步计算机操作系统时间。</p><h3 id="系统时钟"><a href="#系统时钟" class="headerlink" title="系统时钟"></a>系统时钟</h3><p>系统时钟，操作系统认知的时间，包括时区信息和UTC时间（unix时戳均使用1970年1月1日0时0分0秒到目前的UTC秒数）两部分。</p><h3 id="本地-local-时间"><a href="#本地-local-时间" class="headerlink" title="本地 local 时间"></a>本地 local 时间</h3><p>rtc保存的时间可以有两种，一是utc时间，二是local时间，以东八区为例：</p><ul><li>当rtc时间为utc时间：系统utc时间 = rtc时间， 本地local时间 = rtc时间 + 8小时</li><li>当rtc时间为local时间：系统utc时间 = rtc时间 - 8小时， 本地local时间 = rtc时间</li></ul><p>两种设置都可以，没有明确规定，不过一般Windows和Linux都默认rtc保存local本地时间。</p><h2 id="Date-对象与函数"><a href="#Date-对象与函数" class="headerlink" title="Date 对象与函数"></a>Date 对象与函数</h2><h2 id="开源库"><a href="#开源库" class="headerlink" title="开源库"></a>开源库</h2><h3 id="Moment-js"><a href="#Moment-js" class="headerlink" title="Moment.js"></a><a href="http://momentjs.cn/" target="_blank" rel="noopener">Moment.js</a></h3><h2 id="写一个库"><a href="#写一个库" class="headerlink" title="写一个库"></a>写一个库</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://blog.csdn.net/u010507799/article/details/52288190" target="_blank" rel="noopener">时间时区概念及常用时间函数</a></p><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" rel="noopener">Developer Date</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;内容分区&quot;&gt;&lt;a href=&quot;#内容分区&quot; class=&quot;headerlink&quot; title=&quot;内容分区&quot;&gt;&lt;/a&gt;内容分区&lt;/h2&gt;&lt;h2 id=&quot;文本&quot;&gt;&lt;a href=&quot;#文本&quot; class=&quot;headerlink&quot; title=&quot;文本&quot;&gt;&lt;/a&gt;文本&lt;/h
+        &lt;h2 id=&quot;前提知识&quot;&gt;&lt;a href=&quot;#前提知识&quot; class=&quot;headerlink&quot; title=&quot;前提知识&quot;&gt;&lt;/a&gt;前提知识&lt;/h2&gt;&lt;h3 id=&quot;时区&quot;&gt;&lt;a href=&quot;#时区&quot; class=&quot;headerlink&quot; title=&quot;时区&quot;&gt;&lt;/a&gt;时区&lt;/h
       
     
     </summary>
     
-      <category term="html5" scheme="http://zhouxiaohao.me/categories/html5/"/>
+      <category term="javascript" scheme="http://zhouxiaohao.me/categories/javascript/"/>
     
     
   </entry>
@@ -95,17 +95,24 @@
   </entry>
   
   <entry>
-    <title>浮动与清除浮动大总结</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/css/%E6%B5%AE%E5%8A%A8%E4%B8%8E%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E5%A4%A7%E6%80%BB%E7%BB%93/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/css/浮动与清除浮动大总结/</id>
+    <title>html 标签</title>
+    <link href="http://zhouxiaohao.me/2019/12/08/html/html%E6%A0%87%E7%AD%BE/"/>
+    <id>http://zhouxiaohao.me/2019/12/08/html/html标签/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="内容分区"><a href="#内容分区" class="headerlink" title="内容分区"></a>内容分区</h2><h2 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h2><h3 id="块级文本"><a href="#块级文本" class="headerlink" title="块级文本"></a>块级文本</h3><h3 id="内联文本"><a href="#内联文本" class="headerlink" title="内联文本"></a>内联文本</h3><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><h2 id="图片与多媒体"><a href="#图片与多媒体" class="headerlink" title="图片与多媒体"></a>图片与多媒体</h2><h2 id="内嵌内容"><a href="#内嵌内容" class="headerlink" title="内嵌内容"></a>内嵌内容</h2><h2 id="交互元素"><a href="#交互元素" class="headerlink" title="交互元素"></a>交互元素</h2>]]></content>
+    
     <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;内容分区&quot;&gt;&lt;a href=&quot;#内容分区&quot; class=&quot;headerlink&quot; title=&quot;内容分区&quot;&gt;&lt;/a&gt;内容分区&lt;/h2&gt;&lt;h2 id=&quot;文本&quot;&gt;&lt;a href=&quot;#文本&quot; class=&quot;headerlink&quot; title=&quot;文本&quot;&gt;&lt;/a&gt;文本&lt;/h
+      
     
     </summary>
     
-      <category term="css3" scheme="http://zhouxiaohao.me/categories/css3/"/>
+      <category term="html5" scheme="http://zhouxiaohao.me/categories/html5/"/>
     
     
   </entry>
@@ -134,45 +141,17 @@
   </entry>
   
   <entry>
-    <title>js 的数字精度</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/js/%E6%95%B0%E5%AD%A6%E7%B2%BE%E5%BA%A6/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/js/数学精度/</id>
+    <title>浮动与清除浮动大总结</title>
+    <link href="http://zhouxiaohao.me/2019/12/08/css/%E6%B5%AE%E5%8A%A8%E4%B8%8E%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E5%A4%A7%E6%80%BB%E7%BB%93/"/>
+    <id>http://zhouxiaohao.me/2019/12/08/css/浮动与清除浮动大总结/</id>
     <published>2019-12-08T08:04:55.000Z</published>
     <updated>2019-12-08T08:04:55.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="数字精度丢失的典型问题"><a href="#数字精度丢失的典型问题" class="headerlink" title="数字精度丢失的典型问题"></a>数字精度丢失的典型问题</h2><h5 id="1、两个浮点数相加-（部分浮点数相加导致精度丢失问题）"><a href="#1、两个浮点数相加-（部分浮点数相加导致精度丢失问题）" class="headerlink" title="1、两个浮点数相加 （部分浮点数相加导致精度丢失问题）"></a>1、两个浮点数相加 （部分浮点数相加导致精度丢失问题）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.1 + 0.2 != 0.3 // true</span><br></pre></td></tr></table></figure><h5 id="2、大整数运算"><a href="#2、大整数运算" class="headerlink" title="2、大整数运算"></a>2、大整数运算</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">9999999999999999 == 10000000000000001 // true</span><br><span class="line"></span><br><span class="line">16位数等于17位数？</span><br></pre></td></tr></table></figure><h5 id="3、toFixed"><a href="#3、toFixed" class="headerlink" title="3、toFixed()"></a>3、toFixed()</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.335.toFixed(2) (Chrome)</span><br><span class="line">// 1.33</span><br><span class="line"></span><br><span class="line">1.334.toFixed(2) (Chrome)</span><br><span class="line">// 1.33</span><br><span class="line"></span><br><span class="line">1.336.toFixed(2) (Chrome)</span><br><span class="line">// 1.34</span><br><span class="line"></span><br><span class="line">四舍五入，在五这个中间点有问题</span><br></pre></td></tr></table></figure><h2 id="数字精度丢失的原因"><a href="#数字精度丢失的原因" class="headerlink" title="数字精度丢失的原因"></a>数字精度丢失的原因</h2><h2 id="数字精度丢失的解决方案"><a href="#数字精度丢失的解决方案" class="headerlink" title="数字精度丢失的解决方案"></a>数字精度丢失的解决方案</h2><p>1、整数 运算结果不超过 Math.pow(2,53) 就不会丢失精度。</p><p>2、小数 把小数乘倍数，操作，再缩小回原来倍数。</p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://www.cnblogs.com/snandy/p/4943138.html" target="_blank" rel="noopener">JavaScript数字精度丢失问题总结</a></p>]]></content>
-    
     <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;数字精度丢失的典型问题&quot;&gt;&lt;a href=&quot;#数字精度丢失的典型问题&quot; class=&quot;headerlink&quot; title=&quot;数字精度丢失的典型问题&quot;&gt;&lt;/a&gt;数字精度丢失的典型问题&lt;/h2&gt;&lt;h5 id=&quot;1、两个浮点数相加-（部分浮点数相加导致精度丢失问题）&quot;&gt;
-      
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Date 日期处理</title>
-    <link href="http://zhouxiaohao.me/2019/12/08/js/%E6%97%A5%E6%9C%9F/"/>
-    <id>http://zhouxiaohao.me/2019/12/08/js/日期/</id>
-    <published>2019-12-08T08:04:55.000Z</published>
-    <updated>2019-12-08T08:04:55.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前提知识"><a href="#前提知识" class="headerlink" title="前提知识"></a>前提知识</h2><h3 id="时区"><a href="#时区" class="headerlink" title="时区"></a>时区</h3><p>以英国（格林尼治天文台旧址）即本初子午线为中时区（零时区）、东1-12区，西1-12区。每个时区横跨经度15度，时间为1小时。</p><h3 id="区时"><a href="#区时" class="headerlink" title="区时"></a>区时</h3><p>每个时区的中央经线上的时间就是这个时区内统一采用的时间，称为区时。</p><h3 id="UTC-协调世界时"><a href="#UTC-协调世界时" class="headerlink" title="UTC 协调世界时"></a>UTC 协调世界时</h3><p>协调世界时，又称世界统一时间、世界标准时间、国际协调时间。</p><h3 id="GMT-格林尼治标准时"><a href="#GMT-格林尼治标准时" class="headerlink" title="GMT 格林尼治标准时"></a>GMT 格林尼治标准时</h3><p>格林尼治标准时间的正午是指当太阳横穿格林尼治子午线时的时间。<br>在不需要精确到秒的情况下，通常将GMT 和UTC 视作等同。但UTC 更加科学更加精确，它是以原子时为基础，在时刻上尽量接近世界时的一种时间计量系统。</p><h2 id="软件系统中的时间"><a href="#软件系统中的时间" class="headerlink" title="软件系统中的时间"></a>软件系统中的时间</h2><h3 id="RTC-硬件时钟"><a href="#RTC-硬件时钟" class="headerlink" title="RTC 硬件时钟"></a>RTC 硬件时钟</h3><p>实时时钟为操作系统提供了一个可靠的时间，并且在断电的情况下，RTC实时时钟也可以通过电池供电，一直运行下去，用来保存和同步计算机操作系统时间。</p><h3 id="系统时钟"><a href="#系统时钟" class="headerlink" title="系统时钟"></a>系统时钟</h3><p>系统时钟，操作系统认知的时间，包括时区信息和UTC时间（unix时戳均使用1970年1月1日0时0分0秒到目前的UTC秒数）两部分。</p><h3 id="本地-local-时间"><a href="#本地-local-时间" class="headerlink" title="本地 local 时间"></a>本地 local 时间</h3><p>rtc保存的时间可以有两种，一是utc时间，二是local时间，以东八区为例：</p><ul><li>当rtc时间为utc时间：系统utc时间 = rtc时间， 本地local时间 = rtc时间 + 8小时</li><li>当rtc时间为local时间：系统utc时间 = rtc时间 - 8小时， 本地local时间 = rtc时间</li></ul><p>两种设置都可以，没有明确规定，不过一般Windows和Linux都默认rtc保存local本地时间。</p><h2 id="Date-对象与函数"><a href="#Date-对象与函数" class="headerlink" title="Date 对象与函数"></a>Date 对象与函数</h2><h2 id="开源库"><a href="#开源库" class="headerlink" title="开源库"></a>开源库</h2><h3 id="Moment-js"><a href="#Moment-js" class="headerlink" title="Moment.js"></a><a href="http://momentjs.cn/" target="_blank" rel="noopener">Moment.js</a></h3><h2 id="写一个库"><a href="#写一个库" class="headerlink" title="写一个库"></a>写一个库</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://blog.csdn.net/u010507799/article/details/52288190" target="_blank" rel="noopener">时间时区概念及常用时间函数</a></p><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" rel="noopener">Developer Date</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;前提知识&quot;&gt;&lt;a href=&quot;#前提知识&quot; class=&quot;headerlink&quot; title=&quot;前提知识&quot;&gt;&lt;/a&gt;前提知识&lt;/h2&gt;&lt;h3 id=&quot;时区&quot;&gt;&lt;a href=&quot;#时区&quot; class=&quot;headerlink&quot; title=&quot;时区&quot;&gt;&lt;/a&gt;时区&lt;/h
-      
-    
-    </summary>
-    
-      <category term="javascript" scheme="http://zhouxiaohao.me/categories/javascript/"/>
+      <category term="css3" scheme="http://zhouxiaohao.me/categories/css3/"/>
     
     
   </entry>
@@ -236,6 +215,27 @@
     </summary>
     
       <category term="性能和优化" scheme="http://zhouxiaohao.me/categories/%E6%80%A7%E8%83%BD%E5%92%8C%E4%BC%98%E5%8C%96/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js 的数字精度</title>
+    <link href="http://zhouxiaohao.me/2019/12/08/js/%E6%95%B0%E5%AD%A6%E7%B2%BE%E5%BA%A6/"/>
+    <id>http://zhouxiaohao.me/2019/12/08/js/数学精度/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="数字精度丢失的典型问题"><a href="#数字精度丢失的典型问题" class="headerlink" title="数字精度丢失的典型问题"></a>数字精度丢失的典型问题</h2><h5 id="1、两个浮点数相加-（部分浮点数相加导致精度丢失问题）"><a href="#1、两个浮点数相加-（部分浮点数相加导致精度丢失问题）" class="headerlink" title="1、两个浮点数相加 （部分浮点数相加导致精度丢失问题）"></a>1、两个浮点数相加 （部分浮点数相加导致精度丢失问题）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.1 + 0.2 != 0.3 // true</span><br></pre></td></tr></table></figure><h5 id="2、大整数运算"><a href="#2、大整数运算" class="headerlink" title="2、大整数运算"></a>2、大整数运算</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">9999999999999999 == 10000000000000001 // true</span><br><span class="line"></span><br><span class="line">16位数等于17位数？</span><br></pre></td></tr></table></figure><h5 id="3、toFixed"><a href="#3、toFixed" class="headerlink" title="3、toFixed()"></a>3、toFixed()</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.335.toFixed(2) (Chrome)</span><br><span class="line">// 1.33</span><br><span class="line"></span><br><span class="line">1.334.toFixed(2) (Chrome)</span><br><span class="line">// 1.33</span><br><span class="line"></span><br><span class="line">1.336.toFixed(2) (Chrome)</span><br><span class="line">// 1.34</span><br><span class="line"></span><br><span class="line">四舍五入，在五这个中间点有问题</span><br></pre></td></tr></table></figure><h2 id="数字精度丢失的原因"><a href="#数字精度丢失的原因" class="headerlink" title="数字精度丢失的原因"></a>数字精度丢失的原因</h2><h2 id="数字精度丢失的解决方案"><a href="#数字精度丢失的解决方案" class="headerlink" title="数字精度丢失的解决方案"></a>数字精度丢失的解决方案</h2><p>1、整数 运算结果不超过 Math.pow(2,53) 就不会丢失精度。</p><p>2、小数 把小数乘倍数，操作，再缩小回原来倍数。</p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://www.cnblogs.com/snandy/p/4943138.html" target="_blank" rel="noopener">JavaScript数字精度丢失问题总结</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;数字精度丢失的典型问题&quot;&gt;&lt;a href=&quot;#数字精度丢失的典型问题&quot; class=&quot;headerlink&quot; title=&quot;数字精度丢失的典型问题&quot;&gt;&lt;/a&gt;数字精度丢失的典型问题&lt;/h2&gt;&lt;h5 id=&quot;1、两个浮点数相加-（部分浮点数相加导致精度丢失问题）&quot;&gt;
+      
+    
+    </summary>
     
     
   </entry>
